@@ -1,0 +1,43 @@
+/* creating animations with keyframes */
+/* add name
+0% to start
+100% when to end 
+can add other % in between too */
+
+/* transformX is from left to :right
+transformY is from top to bottom
+translate(0) is the same as without animation */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem)
+
+    }
+
+    // 80% {
+    //     transform: translateX(1rem);
+    // }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem)
+
+    }
+
+    // 80% {
+    //     transform: translateX(-1rem);
+    // }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
