@@ -100,7 +100,8 @@
                         class='form__submit-button'
                         type="submit"  
                         @click='isSubmit = true'
-                        :disabled='$v.$invalid'>
+                        :disabled='$v.$invalid'
+                        value='Send'>
                 </form>
                 <div class='confirmation' v-else>
                     <app-heading-H2>Thank you, {{ firstName }}!</app-heading-H2>
