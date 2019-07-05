@@ -3,8 +3,8 @@
         <div class="contact">
             <div class="contact__form">
                 <form
-                    action="http://formspree.io/inga.balcune@gmail.com" 
-                    method="POST" 
+                    id="contactform" 
+                    action="https://formspree.io/inga.balcune@gmail.com" method="POST"
                     class="form"
                     v-if='!isSubmit'>
                     <app-heading-H2>Send me a message!</app-heading-H2>
@@ -41,7 +41,7 @@
                         class='form__label'
                         for="email">Email</label>
                         <input 
-                        name="email"
+                        name="_replyto"
                         class='form__input'
                         type='email' 
                         id='email'
@@ -95,13 +95,14 @@
                             ></textarea>
                             <p class='form__input--warning' v-if="$v.message.$error">Provide a message that is at least {{$v.message.$params.minLen.min}} characters long!</p>
                     </div>
+                    <input name="_formsubmit_id" type="text" style="display:none">
                     
                     <input
                         class='form__submit-button'
                         type="submit"  
                         @click='isSubmit = true'
                         :disabled='$v.$invalid'
-                        value='Send'>
+                        value='Submit'>
                 </form>
                 <div class='confirmation' v-else>
                     <app-heading-H2>Thank you, {{ firstName }}!</app-heading-H2>
