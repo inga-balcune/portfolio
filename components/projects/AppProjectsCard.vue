@@ -45,7 +45,7 @@ export default {
                 {
                     heading: 'Countries of the world',
                     details: 'This is my first serious web development project. In its development used some of the newest programming techniques, languages and frameworks.',
-                    image: require('../../assets/img/countries.png'),
+                    image: require('~/assets/img/countries.png'),
                     imageAlt: 'Countries of the world project image',
                     color: 'red',
                     url: 'https://countries-of-the-world-by-inga.herokuapp.com',
@@ -60,7 +60,7 @@ export default {
                 {
                     heading: 'Work in progress',
                     details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vitae modi laborum hic voluptates cum nihil quaerat dolor. Praesentium obcaecati autem deleniti ipsam repudiandae voluptatum in accusamus pariatur blanditiis modi.',
-                    image: require('../../assets/img/placeholder.jpg'),
+                    image: require('~/assets/img/placeholder.jpg'),
                     imageAlt: 'Project Image',
                     url: '',
                     features: [
@@ -74,7 +74,7 @@ export default {
                 {
                     heading: 'Work in progress',
                     details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vitae modi laborum hic voluptates cum nihil quaerat dolor. Praesentium obcaecati autem deleniti ipsam repudiandae voluptatum in accusamus pariatur blanditiis modi.',
-                    image: require('../../assets/img/placeholder.jpg'),
+                    image: require('~/assets/img/placeholder.jpg'),
                     imageAlt: 'Project Image',
                     url: '',
                     features: [
