@@ -13,7 +13,7 @@
                         for="name"
                         class='form__label'>Name</label>
                         <input 
-                            name='name'
+                            name="name"
                             class='form__input'
                             type='firstName' 
                             id='name'
@@ -27,7 +27,7 @@
                         class='form__label'
                         for="surname">Surname</label>
                     <input 
-                        name='surname'
+                        name="surname"
                         class='form__input'
                         type='lastName' 
                         id='surname'
@@ -41,7 +41,7 @@
                         class='form__label'
                         for="email">Email</label>
                         <input 
-                        name='email'
+                        name="email"
                         class='form__input'
                         type='email' 
                         id='email'
@@ -85,7 +85,7 @@
                         class='form__label'>Message</label>
                         <textarea 
                         class='form__input form__message'
-                        name='message' 
+                        name="message" 
                         id="message" 
                         cols="50" 
                         rows="4" 
@@ -99,7 +99,7 @@
                     <input
                         class='form__submit-button'
                         type="submit"  
-                        @click.prevent='isSubmit = true'
+                        @click='isSubmit = true'
                         :disabled='$v.$invalid'>
                 </form>
                 <div class='confirmation' v-else>
