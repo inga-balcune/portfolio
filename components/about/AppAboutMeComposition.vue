@@ -6,11 +6,11 @@
                 alt="Photo 1" 
                 class="composition__photo composition__photo--p1"
                 src='@/assets/img/Georgia-large.jpg'>
-            <img srcset="@/assets/img/Laos.jpg 300w, @/assets/img/Laos-large.jpg 1000w" 
+            <img srcset="@/assets/img/Georgia.jpg 300w, @/assets/img/Georgia-large.jpg 1000w" 
                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
                 alt="Photo 2" 
                 class="composition__photo composition__photo--p2"
-                src='@/assets/img/Laos-large.jpg'>
+                src='@/assets/img/Georgia-large.jpg'>
             <img srcset="@/assets/img/PanamaBike.jpg 300w, @/assets/img/PanamaBike-large.jpg 1000w" 
                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="Photo 3" 
