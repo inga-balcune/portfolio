@@ -3,8 +3,7 @@
         <div class="contact">
             <div class="contact__form">
                 <form
-                    id="contactform" 
-                    action="https://formspree.io/inga.balcune@gmail.com" method="POST"
+                    id="contactform"
                     class="form"
                     v-if='!isSubmit'>
                     <app-heading-H2>Send me a message!</app-heading-H2>
@@ -41,7 +40,7 @@
                         class='form__label'
                         for="email">Email</label>
                         <input 
-                        name="_replyto"
+                        name="email"
                         class='form__input'
                         type='email' 
                         id='email'
@@ -95,13 +94,13 @@
                             ></textarea>
                             <p class='form__input--warning' v-if="$v.message.$error">Provide a message that is at least {{$v.message.$params.minLen.min}} characters long!</p>
                     </div>
-                    <input name="_formsubmit_id" type="text" style="display:none">
+                    <!-- <input name="_formsubmit_id" type="text" style="display:none"> -->
                     
                     <input
                         class='form__submit-button'
                         type="submit"  
-                        @click='isSubmit = true'
                         :disabled='$v.$invalid'
+                        @click="formSubmit"
                         value='Submit'>
                 </form>
                 <div class='confirmation' v-else>
@@ -125,6 +124,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AppHeadingH2 from '@/components/common/AppHeadingH2'
 import AppRadioButton from '@/components/common/AppRadioButton'
 import AppInputField from '@/components/common/AppInputField'
@@ -143,11 +143,6 @@ export default {
             time: moment().format('LLL'),
         }
     },
-    // methods: {
-    //     moment: function () {
-    //         this.time = moment().format('LLL');
-    //     }
-    // },
     validations: {
         firstName: {
             required,
@@ -171,6 +166,40 @@ export default {
         AppHeadingH2,
         AppRadioButton,
         AppInputField
+    },
+    methods: {
+        // formSubmitted(email) {
+        //     this.isSubmit = true
+        //     // axios.post('https://inga-portfolio-contact-form.firebaseio.com/form.json', this.email)
+        //     // .then(result => console.log(result))
+        //     // .catch(error => console.log(error))
+        //     axios.post('https://inga-portfolio-contact-form.firebaseio.com/form.json', {email})
+        //     .then(response => { 
+        //         console.log(response)
+        //     })
+        //     .catch(error => {
+        //         console.log(error.response)
+        //     });
+        // },
+        formSubmit(e) {
+            this.isSubmit = true
+            e.preventDefault()
+                let currentObj = this
+                axios.post('https://inga-portfolio-contact-form.firebaseio.com/form.json', {
+                    time: this.time,
+                    name: this.firstName,
+                    surname: this.lastName,
+                    email: this.email,
+                    subject: this.subjectPicked,
+                    message: this.message
+                })
+                .then(response => {  
+                    console.log(response)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }
     }
 }
 </script>
@@ -188,11 +217,17 @@ export default {
 
 .contact {
     background-image: 
-        linear-gradient(105deg, 
+        -webkit-linear-gradient(345deg, 
              rgba($color-white, .9) 0%, 
              rgba($color-white, .9) 50%,
              transparent 50%),
         url(../../assets/img/CostaRica-small.jpg);
+    background-image: 
+            linear-gradient(105deg, 
+                rgba($color-white, .9) 0%, 
+                rgba($color-white, .9) 50%,
+                transparent 50%),
+            url(../../assets/img/CostaRica-small.jpg);
     background-size: cover;
     background-position: center;
     border-radius: .3rem;
@@ -202,28 +237,45 @@ export default {
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 125em) {
         background-image: 
-        linear-gradient(105deg, 
+        -webkit-linear-gradient(345deg, 
              rgba($color-white, .9) 0%, 
              rgba($color-white, .9) 50%,
              transparent 50%),
         url(../../assets/img/CostaRica.jpg);
+        background-image: 
+                linear-gradient(105deg, 
+                    rgba($color-white, .9) 0%, 
+                    rgba($color-white, .9) 50%,
+                    transparent 50%),
+                url(../../assets/img/CostaRica.jpg);
     }
 
     @include respond(tab-land) {
         background-image: 
-        linear-gradient(105deg, 
+        -webkit-linear-gradient(345deg, 
              rgba($color-white, .9) 0%, 
              rgba($color-white, .9) 55%,
              transparent 55%),
         url(../../assets/img/CostaRica.jpg);
+        background-image: 
+                linear-gradient(105deg, 
+                    rgba($color-white, .9) 0%, 
+                    rgba($color-white, .9) 55%,
+                    transparent 55%),
+                url(../../assets/img/CostaRica.jpg);
     }
 
     @include respond(tab-port) {
         background-image: 
-        linear-gradient(to right, 
+        -webkit-linear-gradient(left, 
              rgba($color-white, .9) 0%, 
              rgba($color-white, .9) 100%),
         url(../../assets/img/CostaRica.jpg);
+        background-image: 
+                linear-gradient(to right, 
+                    rgba($color-white, .9) 0%, 
+                    rgba($color-white, .9) 100%),
+                url(../../assets/img/CostaRica.jpg);
     }
 
     &__form {
@@ -255,7 +307,7 @@ export default {
         background-color: rgba($color-white, .9);
         border: none;
         border-bottom: .2rem solid transparent;
-        width: 90%;
+        width: 80%;
         display: block;
 
         &--warning {

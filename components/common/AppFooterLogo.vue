@@ -4,7 +4,7 @@
             <source 
                 srcset='@/assets/img/logo-white-small-1x.png 1x, @/assets/img/logo-white-small-2x.png 2x' 
                 media='(max-width: 37.5em))'>
-            <img 
+            <img class="footer__logo-two"
                 srcset="@/assets/img/logo-white-1x.png 1x, @/assets/img/logo-white-2x.png 2x" 
                 alt="Footer Logo"
                 src='@/assets/img/logo-white-2x.png'>
@@ -29,8 +29,12 @@ export default {
     }
 
     .footer__logo {
-        width: 7rem;
+        width: 12rem;
         height: auto;
+    }
 
+    .footer__logo-two {
+        width: 12rem;
+        height: auto;
     }
 </style>

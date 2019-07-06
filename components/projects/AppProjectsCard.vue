@@ -4,7 +4,7 @@
                 <div class="card">
                     
                     <ul class="card__side card__side--front">
-                        <div class="card__picture" v-bind:style="{ backgroundImage: 'linear-gradient(to right bottom, #537895, #09203f), url(' + project.image + ')' }">
+                        <div class="card__picture" v-bind:style="{backgroundImage: 'linear-gradient(to right bottom, #537895, #09203f), url(' + project.image + ')', backgroundImage: 'url(' + project.image + ')' }">
                             &nbsp;
                         </div>
                         <li class="card__heading">
@@ -44,7 +44,7 @@ export default {
             projects: [
                 {
                     heading: 'Countries of the world',
-                    details: 'This is my first serious web development project. In its development used some of the newest programming techniques, languages and frameworks.',
+                    details: 'This is my first serious web development project. In its development I used some of the newest programming techniques, languages and frameworks.',
                     image: require('~/assets/img/countries.png'),
                     imageAlt: 'Countries of the world project image',
                     color: 'red',
@@ -170,11 +170,19 @@ export default {
         background-position: center; /* Center the image */
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: rgba($color-primary, 0.4);
         height: 23rem;
         background-blend-mode: overlay;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         position: relative;
+        
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+         -webkit-background-size: auto 43px;
+        -moz-background-size: auto 43px;
+        -o-background-size: auto 43px;
+        }
     }
     
 
@@ -267,7 +275,6 @@ export default {
                 transform: translate(-50%,0);
                 width: 5rem;
                 }
-
             }
         }
 

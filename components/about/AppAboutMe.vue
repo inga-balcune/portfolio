@@ -41,7 +41,7 @@ export default {
      }
 
      @include respond(phone) { 
-        padding: 20rem 0 25rem 0;
+        padding: 30rem 0 25rem 0;
      }
 
 }

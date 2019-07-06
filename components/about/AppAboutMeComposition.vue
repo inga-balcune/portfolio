@@ -43,8 +43,10 @@ export default {
         border-radius: 2px;
         position: absolute;
         z-index: 10; 
+        -webkit-transition: all .2s;
         transition: all .2s;
         outline-offset: .7rem; // to make space between image and outline
+
 
         @include respond(tab-port) { 
             margin-top: 6rem;
@@ -62,7 +64,8 @@ export default {
             top: -2rem;
 
             @include respond(tab-port) { 
-                top: 0;
+                top: 1rem;
+                -webkit-transform: scale(1.2);
                 transform: scale(1.2);
              }
         }
@@ -73,6 +76,7 @@ export default {
 
             @include respond(tab-port) { 
                 top: -2rem;
+                -webkit-transform: scale(1.3);
                 transform: scale(1.3);
                 z-index: 25;
              }
@@ -83,14 +87,16 @@ export default {
             top: 10rem;
 
             @include respond(tab-port) { 
-                top: 0;
+                top: 1rem;
                 left: 0;
-                transform: scale(1.2);
+                -webkit-transform: scale(1.25);
+                transform: scale(1.25);
              }
         }
 
         &:hover {
             outline: .7rem solid $color-primary;
+             -webkit-transform: scale(1.05) translateY(-.5rem);
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20; // to arrange images on top 

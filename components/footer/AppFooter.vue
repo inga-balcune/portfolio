@@ -69,11 +69,14 @@ export default {
          }
     }
 
-    &__logo {
-        width: 7rem;
-        height: auto;
+    // &__logo {
+    //     width: 7rem;
+    //     height: auto;
 
-    }
+    //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //         width: 7rem;
+    //     }
+    // }
 
 }
 
@@ -81,15 +84,36 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
     @include respond(phone) { 
-        grid-template-columns: 1fr;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
      }
 
     &__items {
         margin: 0 3rem;
         text-align: center;
 
+         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            width: 50%;
+        }
+
         @include respond(phone) { 
+            width: 100%;
             margin: 0 1rem;
          }
     }

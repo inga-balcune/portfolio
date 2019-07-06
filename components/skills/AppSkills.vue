@@ -18,14 +18,14 @@ export default {
         return {
             skills: [
                 {   name: 'HTML5',
-                    logo: require('@/assets/img/HTML5.svg'),
+                    logo: require('@/assets/img/HTML5.png'),
                     description: 'Creating page structure, adding headings, paragraphs, links, images, ordered & unordered lists, tables, quotations, atributes...',
                     certURL: 'https://www.freecodecamp.org/certification/inga-balcune/responsive-web-design',
                     certName: 'freeCodeCamp Certificate',
                     imageAlt: 'HTML5 logo'
                 },
                 {   name: 'CSS',
-                    logo: require('@/assets/img/css_logo.svg'),
+                    logo: require('@/assets/img/css_logo.png'),
                     description: 'Adding styles and flavors to web pages with right fonts, colors, sizing buttons, background images and more. Using flexbox and grid to create responsiviness for desktop and mobile.',
                     certURL: 'https://www.freecodecamp.org/certification/inga-balcune/responsive-web-design',
                     certName: 'freeCodeCamp Certificate',
@@ -39,7 +39,7 @@ export default {
                     imageAlt: ''
                 },
                 {   name: 'Javascript',
-                    logo: require('@/assets/img/javascript_logo.svg'),
+                    logo: require('@/assets/img/javascript_logo.png'),
                     description: 'Creating page structure, adding headings, paragraphs, links, images, ordered & unordered lists, tables, quotations, atributes...',
                     mainCert: 'https://www.freecodecamp.org/certification/inga-balcune/javascript-algorithms-and-data-structures',
                     mainCertName: 'freeCodeCamp Certificate',

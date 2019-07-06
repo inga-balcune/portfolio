@@ -1,7 +1,7 @@
 <template>
     <header class="header">
             <div class="header__logo-box">
-                <img srcset="@/assets/img/logo-white.png" alt="Logo" class='header__logo'>
+                <img srcset="@/assets/img/logo-white.png" src="@/assets/img/logo-white.png" alt="Logo" class='header__logo'>
             </div>
             <div class="header__text-box">
                 <AppHeaderHeading />
@@ -35,6 +35,10 @@ export default {
     background-size: cover;
     background-position: center;
     position: relative;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+         height: 95vh;
+    }
 
     // for devices that support clip-path
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
