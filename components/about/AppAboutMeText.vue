@@ -2,7 +2,7 @@
     <div class="grid-container--item u-margin-bottom-small">
         <h3 class="heading-tertiary u-margin-bottom-small">My background</h3>
         <p class="paragraph">I'm a new front end web developer based in Copenhagen. Originally I am from Latvia, however before moving to Denmark, studies, career and private life has made me relocate several times to places like Italy, Singapore, and Canada.</p>
-        <p class="paragraph">Prior coding, I was running my own Wordpress based comparison sites, and working within business development and project management in Singapore.</p>
+        <p class="paragraph">Prior coding, together with a partner, I was running a few successful Wordpress based comparison sites, and working within business development and project management in Singapore.</p>
         <br>
         <h3 class="heading-tertiary u-margin-bottom-small">My aspirations</h3>
         <p class="paragraph">
