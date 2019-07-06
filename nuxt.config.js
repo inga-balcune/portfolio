@@ -50,8 +50,12 @@ export default {
     '@nuxtjs/moment',
     ['@nuxtjs/google-analytics', {
       id: 'UA-143406553-1'
-    }]
+    }],
+    '@bazzite/nuxt-optimized-images'
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   styleResources: {
     scss: [
