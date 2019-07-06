@@ -48,12 +48,12 @@ export default {
                     image: require('~/assets/img/countries.png'),
                     imageAlt: 'Countries of the world project image',
                     color: 'red',
-                    url: 'https://countries-of-the-world-by-inga.herokuapp.com',
+                    url: 'https://countries-of-the-world-project.herokuapp.com/',
                     features: [
                             {name: 'CSS', subTitle: 'Flexbox, Grid'}, 
                             {name: 'Sass', subTitle: 'Variables, mixins, layouts'}, 
                             {name: 'Javascript', subTitle: 'ES6'},
-                            {name: 'Vue', subTitle: 'Components, props'},
+                            {name: 'Vue', subTitle: 'Components, props, vuex'},
                             {name: 'Nuxt', subTitle: 'Universal, nuxtServerInit()'}
                     ],
                 },

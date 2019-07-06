@@ -47,7 +47,10 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-143406553-1'
+    }]
   ],
 
   styleResources: {
