@@ -11,7 +11,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Inga's front end web development portfolio" }
+      { hid: 'description', name: 'description', content: "Inga's front end web development portfolio" },
+      {name:"google-site-verification" content:"CG7L86vzmGyt1HIkRv00162ijnmfKPscuPAvDvXRjKs"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
