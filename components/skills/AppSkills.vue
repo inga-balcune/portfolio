@@ -33,14 +33,14 @@ export default {
                 },
                 {   name: 'Sass',
                     logo: require('@/assets/img/sass_logo.png'),
-                    description: 'Creating page structure, adding headings, paragraphs, links, images, ordered & unordered lists, tables, quotations, atributes...',
+                    description: 'Using variables, mixins, built-in functions to write cleaner, easier to maintain and less CSS in a programming construct.',
                     certURL: '',
                     certName: '',
                     imageAlt: ''
                 },
                 {   name: 'Javascript',
                     logo: require('@/assets/img/javascript_logo.png'),
-                    description: 'Creating page structure, adding headings, paragraphs, links, images, ordered & unordered lists, tables, quotations, atributes...',
+                    description: 'Adding a website functionality and behavior with JS variables, functions, loops, conditionals and comparisons.',
                     mainCert: 'https://www.freecodecamp.org/certification/inga-balcune/javascript-algorithms-and-data-structures',
                     mainCertName: 'freeCodeCamp Certificate',
                     certURL: 'https://www.udemy.com/certificate/UC-9XDGCWFO/',
@@ -49,10 +49,17 @@ export default {
                 },
                 {   name: 'VueJS',
                     logo: require('@/assets/img/vuejs_logo.png'),
-                    description: 'Creating page structure, adding headings, paragraphs, links, images, ordered & unordered lists, tables, quotations, atributes...',
+                    description: 'Taking advantage of VueJS advanced functions to provide simplified web development and better development of a user interface.',
                     certURL: 'https://www.udemy.com/certificate/UC-9109QQHJ/',
                     certName: 'Udemy Certificate',
                     imageAlt: 'VueJS logo'
+                },
+                {   name: 'NuxtJS',
+                    logo: require('@/assets/img/nuxt_logo.png'),
+                    description: 'Utilizing features that make the development of Universal SSR and single-page applications a much nicer experience. Benefiting from features like ES6 compilation, automatic routing, custom layouts, and many more.',
+                    certURL: 'https://www.udemy.com/certificate/UC-BVWVUKUE/',
+                    certName: 'Udemy Certificate',
+                    imageAlt: 'NuxtJS logo'
                 },
                 
             ]
