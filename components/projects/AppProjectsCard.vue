@@ -58,17 +58,17 @@ export default {
                     ],
                 },
                 {
-                    heading: 'Work in progress',
-                    details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vitae modi laborum hic voluptates cum nihil quaerat dolor. Praesentium obcaecati autem deleniti ipsam repudiandae voluptatum in accusamus pariatur blanditiis modi.',
-                    image: require('~/assets/img/placeholder.jpg'),
-                    imageAlt: 'Project Image',
-                    url: '',
+                    heading: 'Share your recipe',
+                    details: 'This is my second project that includes login and user authentication, posting to and fetching data from Firebase, and material design framework Vue Material',
+                    image: require('~/assets/img/share-your-recipe.png'),
+                    imageAlt: 'Share your recipe project image',
+                    url: 'https://share-your-recipe.herokuapp.com/',
                     features: [
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}, 
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}, 
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'},
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'},
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}
+                            {name: 'SASS', subTitle: 'Variables, Mixins'},
+                            {name: 'VueJS', subTitle: 'Props, Vuex'}, 
+                            {name: 'Nuxt', subTitle: 'Middleware'}, 
+                            {name: 'Vue Material', subTitle: 'Layout, Components'},
+                            {name: 'Firebase', subTitle: 'Realtime Database'}
                     ],
                 },
                 {
