@@ -59,7 +59,7 @@ export default {
                 },
                 {
                     heading: 'Share your recipe',
-                    details: 'This is my second project that includes login and user authentication, posting to and fetching data from Firebase, and material design framework Vue Material',
+                    details: 'This is my second project that includes login and user authentication, posting to and fetching data from Firebase, and material design framework Vue Material.',
                     image: require('~/assets/img/share-your-recipe.png'),
                     imageAlt: 'Share your recipe project image',
                     url: 'https://share-your-recipe.herokuapp.com/',
@@ -72,17 +72,17 @@ export default {
                     ],
                 },
                 {
-                    heading: 'Work in progress',
-                    details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vitae modi laborum hic voluptates cum nihil quaerat dolor. Praesentium obcaecati autem deleniti ipsam repudiandae voluptatum in accusamus pariatur blanditiis modi.',
-                    image: require('~/assets/img/placeholder.jpg'),
-                    imageAlt: 'Project Image',
-                    url: '',
+                    heading: 'Greatest Minds of History',
+                    details: 'This is a front-end development assignment required by a multinational SaaS company in Copenhagen to prove my skills and knowledge of web development.',
+                    image: require('~/assets/img/minds.png'),
+                    imageAlt: 'Greatest Minds project Image',
+                    url: 'https://greatest-minds.herokuapp.com/',
                     features: [
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}, 
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}, 
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'},
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'},
-                            {name: 'Lorem Ipsum', subTitle: 'Lorem Ipsum'}
+                            {name: 'CSS', subTitle: 'Spinner, Table'}, 
+                            {name: 'SASS', subTitle: 'Variables, Mixins'}, 
+                            {name: 'ES6', subTitle: 'async/await, API calls'},
+                            {name: 'VueJS / NUXT', subTitle: 'Components, Props'},
+                            {name: 'AXIOS', subTitle: 'GET, Then, Catch'}
                     ]
                 }
             ]

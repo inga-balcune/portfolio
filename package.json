@@ -5,7 +5,7 @@
   "author": "Inga",
   "private": true,
   "engines": {
-    "node": "12.3.1"
+    "node": "12.9.1"
   },
   "scripts": {
     "dev": "nuxt",
