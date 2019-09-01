@@ -73,7 +73,7 @@ export default {
                 },
                 {
                     heading: 'Greatest Minds of History',
-                    details: 'This is a front-end development assignment required by a multinational SaaS company in Copenhagen to prove my skills and knowledge of web development.',
+                    details: 'A front-end web development assignment requested by a multinational SaaS company in Copenhagen. Requirements: Create a responsive table, populate it using the given endpoints. Show a spinner on data loading, delay loading if less than 3 sec.',
                     image: require('~/assets/img/minds.png'),
                     imageAlt: 'Greatest Minds project Image',
                     url: 'https://greatest-minds.herokuapp.com/',
