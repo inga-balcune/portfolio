@@ -7,7 +7,7 @@
                     <ul class="footer-container__list">
                         <li class="footer-container__item"><a href="https://www.linkedin.com/in/ingabalcune/" target="_blank" class="footer-container__link">LinkedIn</a></li>
                         <li class="footer-container__item"><a href="https://www.udemy.com/user/inga-balcune/" target="_blank" class="footer-container__link">Udemy</a></li>
-                        <li class="footer-container__item"><a href="https://www.freecodecamp.org/inga-balcune" target="_blank" class="footer-container__link">freeCodeCamp</a></li>
+                        <li class="footer-container__item"><a href="https://github.com/inga-balcune" target="_blank" class="footer-container__link">Github</a></li>
                     </ul>
                 </div>
             </div>

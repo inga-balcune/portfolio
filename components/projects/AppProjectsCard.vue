@@ -72,8 +72,8 @@ export default {
                     ],
                 },
                 {
-                    heading: 'Greatest Minds of History',
-                    details: 'A front-end web development assignment requested by a multinational SaaS company in Copenhagen. Requirements: Create a responsive table, populate it using the given endpoints. Show a spinner on data loading, delay loading if less than 3 sec.',
+                    heading: 'Greatest Minds',
+                    details: 'A front-end web development assignment requested by a multinational SaaS company in Copenhagen. Requirements: create a responsive table, populate it using the given endpoints. Show a spinner on data loading, delay loading if less than 3 sec.',
                     image: require('~/assets/img/minds.png'),
                     imageAlt: 'Greatest Minds project Image',
                     url: 'https://greatest-minds.herokuapp.com/',
@@ -83,6 +83,20 @@ export default {
                             {name: 'ES6', subTitle: 'async/await, API calls'},
                             {name: 'VueJS / NUXT', subTitle: 'Components, Props'},
                             {name: 'AXIOS', subTitle: 'GET, Then, Catch'}
+                    ]
+                },
+                {
+                    heading: 'Team Assembly',
+                    details: "An assignment was given by a Digital Innovation Agency in Copenhagen. Requirements: create a website where you can add projects and assemble a team to it. The project page should consist of the involved team's images, background & contact info.",
+                    image: require('~/assets/img/team-assembly.png'),
+                    imageAlt: 'Team Assembly Project Image',
+                    url: 'https://team-assembly-assignment.herokuapp.com',
+                    features: [
+                            {name: 'SASS', subTitle: 'Variables, Mixins'}, 
+                            {name: 'ES6', subTitle: 'filter, map, includes, new Set'},
+                            {name: 'VueJS', subTitle: 'Components, Props'},
+                            {name: 'Nuxt', subTitle: 'asyncData'},
+                            {name: 'AXIOS', subTitle: 'GET, PUT, DELETE'}
                     ]
                 }
             ]
@@ -120,10 +134,8 @@ export default {
     position: relative;
     height: 50rem;
     min-width: 30rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     box-shadow: 0 1px 0 rgba($color-black, 0.12);
-
-
 
     &__side {
         height: 55rem;
@@ -195,9 +207,6 @@ export default {
         color: $color-black;
         margin: 2rem 3rem 1rem 3rem;
         line-height: 2.1rem;
-        // position: absolute;
-        // top: 12rem;
-        // right: 2rem;
         
     }
 
@@ -231,8 +240,6 @@ export default {
             font-size: 1.7rem;
             padding: 1rem;
             position: relative;
-
-
             }
         }
 
@@ -249,12 +256,6 @@ export default {
                 font-size: 2rem;
                 font-weight: 700;
                 
-                // margin-left: 1.4rem;
-                
-                /* animation-delay: 3s; starts afte 3s
-                animation-iteration-count: 3; anim plays 3 times 
-                animation-timing-function: ease-out; starts slow and then goes quicker
-                */
             }
 
             &--sub {

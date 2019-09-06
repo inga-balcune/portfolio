@@ -1,6 +1,6 @@
-# my-page
+# Portfolio of Inga Balcune
 
-> My scrumtrulescent Nuxt.js project
+> My portfolio to showcase my coding skills and developed projects
 
 ## Build Setup
 
