@@ -1,37 +1,38 @@
 .grid-container {
-    max-width: $grid-width;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-    margin: 0 auto;
+  max-width: $grid-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  margin: 0 auto;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  @include respond(tab-port) {
+    // width < 900
+    grid-template-columns: 1fr;
+    max-width: 70rem;
+  }
+
+  &--item {
+    padding: 0 2rem;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+      width: 50%;
     }
 
-    @include respond(tab-port) { // width < 900
-        grid-template-columns: 1fr;
-        max-width: 70rem;
-     }
-
-    &--item {
-        padding: 0 2rem;
-
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-            width: 50%;
-        }
-
-        @include respond(tab-port) { // width < 900
-            width: 100%;
-         }
+    @include respond(tab-port) {
+      // width < 900
+      width: 100%;
     }
-    
+  }
 }
