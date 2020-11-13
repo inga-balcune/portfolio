@@ -1,7 +1,6 @@
 <template>
   <section class="section-about">
     <app-heading-H2>About me</app-heading-H2>
-
     <div class="grid-container">
       <AppAboutMeText />
       <AppAboutMeComposition />
