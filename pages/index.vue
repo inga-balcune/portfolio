@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a class="hidden" href="/" role="region">Skip to content</a>
     <AppNavigation />
     <AppHeader />
     <main>
@@ -34,4 +35,9 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.hidden {
+  @include sr-only;
+  @include sr-only-focusable;
+}
+</style>
