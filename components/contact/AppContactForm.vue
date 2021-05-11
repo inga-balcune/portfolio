@@ -170,19 +170,6 @@ export default {
     AppInputField
   },
   methods: {
-    // formSubmitted(email) {
-    //     this.isSubmit = true
-    //     // axios.post('https://inga-portfolio-contact-form.firebaseio.com/form.json', this.email)
-    //     // .then(result => console.log(result))
-    //     // .catch(error => console.log(error))
-    //     axios.post('https://inga-portfolio-contact-form.firebaseio.com/form.json', {email})
-    //     .then(response => {
-    //         console.log(response)
-    //     })
-    //     .catch(error => {
-    //         console.log(error.response)
-    //     });
-    // },
     formSubmit(e) {
       this.isSubmit = true;
       e.preventDefault();
