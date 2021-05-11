@@ -27,9 +27,9 @@
           </li>
         </ul>
         <div class="card__side card__side--back card__side--back-1">
-          <h5 class="card__back-heading u-margin-top-medium">
+          <h3 class="card__back-heading u-margin-top-medium">
             Features
-          </h5>
+          </h3>
           <div class="card__back-list">
             <ul>
               <li

@@ -10,12 +10,14 @@
         <h3 class="heading-tertiary u-margin-bottom-small">{{ skill.name }}</h3>
         <p class="skills-box__text">{{ skill.description }}</p>
         <a
+          v-if="skill.mainCert"
           :href="skill.mainCert"
           target="_blank"
           class="skills-box__certificate skills-box__certificate--main"
           >{{ skill.mainCertName }}</a
         >
         <a
+          v-if="skill.certURL"
           :href="skill.certURL"
           target="_blank"
           class="skills-box__certificate"
