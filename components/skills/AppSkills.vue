@@ -122,7 +122,7 @@ export default {
       rgba($color-primary-light, 0.6),
       rgba($color-primary-dark, 0.6)
     ),
-    url(../../assets/img/Botanic-small.jpg);
+    url(~assets/img/Botanic-small.jpg);
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
@@ -141,7 +141,7 @@ export default {
         rgba($color-primary-light, 0.6),
         rgba($color-primary-dark, 0.6)
       ),
-      url(../../assets/img/Botanic.jpg);
+      url(~assets/img/Botanic.jpg);
   }
 }
 

@@ -224,14 +224,14 @@ export default {
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../../assets/img/CostaRica-small.jpg);
+    url(~assets/img/CostaRica-small.jpg);
   background-image: linear-gradient(
       105deg,
       rgba($color-white, 0.9) 0%,
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../../assets/img/CostaRica-small.jpg);
+    url(~assets/img/CostaRica-small.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.3rem;
@@ -246,14 +246,14 @@ export default {
         rgba($color-white, 0.9) 50%,
         transparent 50%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~assets/img/CostaRica.jpg);
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 50%,
         transparent 50%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~assets/img/CostaRica.jpg);
   }
 
   @include respond(tab-land) {
@@ -263,14 +263,14 @@ export default {
         rgba($color-white, 0.9) 55%,
         transparent 55%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~/assets/img/CostaRica.jpg);
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 55%,
         transparent 55%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~assets/img/CostaRica.jpg);
   }
 
   @include respond(tab-port) {
@@ -279,13 +279,13 @@ export default {
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~assets/img/CostaRica.jpg);
     background-image: linear-gradient(
         to right,
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../../assets/img/CostaRica.jpg);
+      url(~assets/img/CostaRica.jpg);
   }
 
   &__form {
