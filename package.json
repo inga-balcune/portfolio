@@ -23,7 +23,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nuxt": "^2.4.0",
     "sendgrid": "^5.2.3",
     "vuelidate": "^0.7.4"
